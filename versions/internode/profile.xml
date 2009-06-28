@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <widget_instances>
+    <widget_instance id="1">
+      <widget>
+        <name>Internode Usage</name>
+        <description>Monitor your Internode data usage from Chumby.</description>
+        <version>0.1</version>
+        <mode time="30" mode="timeout"/>
+        <access sendable="false" deleteable="false" access="private" virtualable="false"/>
+        <user username="myusername"/>
+        <thumbnail href="file:////mnt/usb/internode-netusage.jpg" contenttype="image/jpeg"/>
+        <movie href="file:////mnt/usb/internode-netusage.swf" contenttype="application/x-shockwave-flash"/>
+      </widget>
+      <access access="private"/>
+      <mode time="30" mode="timeout"/>
+      <widget_parameters>
+		<!-- Required. Your full Internode username, e.g. username@internode.on.net -->
+        <widget_parameter>
+          <name>_private_netusage_inode_username</name>
+          <value>internode_user</value>
+        </widget_parameter>
+		<!-- Required. Your Internode password. -->
+        <widget_parameter>
+          <name>_private_netusage_inode_password</name>
+          <value>my_secret</value>
+        </widget_parameter>
+		<!-- Optional. An alternative name to identify your Internode account by. -->
+		<!-- 
+		<widget_parameter>
+          <name>_private_netusage_inode_accname</name>
+          <value>Home account</value>
+        </widget_parameter>
+		-->
+      </widget_parameters>
+    </widget_instance>
+  </widget_instances>
+</profile>

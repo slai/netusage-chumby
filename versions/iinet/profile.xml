@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <widget_instances>
+    <widget_instance id="1">
+      <widget>
+        <name>iiNet Usage</name>
+        <description>Monitor your iiNet data usage from Chumby.</description>
+        <version>0.1</version>
+        <mode time="30" mode="timeout"/>
+        <access sendable="false" deleteable="false" access="private" virtualable="false"/>
+        <user username="myusername"/>
+        <thumbnail href="file:////mnt/usb/iinet-netusage.jpg" contenttype="image/jpeg"/>
+        <movie href="file:////mnt/usb/iinet-netusage.swf" contenttype="application/x-shockwave-flash"/>
+      </widget>
+      <access access="private"/>
+      <mode time="30" mode="timeout"/>
+      <widget_parameters>
+		<!-- Required. Your iiNet username. -->
+        <widget_parameter>
+          <name>_private_netusage_iinet_username</name>
+          <value>iinet_user</value>
+        </widget_parameter>
+		<!-- Required. Your iiNet password. -->
+        <widget_parameter>
+          <name>_private_netusage_iinet_password</name>
+          <value>my_secret</value>
+        </widget_parameter>
+		<!-- Optional. An alternative name to identify your iiNet account by. -->
+		<!-- 
+		<widget_parameter>
+          <name>_private_netusage_iinet_accname</name>
+          <value>Home account</value>
+        </widget_parameter>
+		-->
+      </widget_parameters>
+    </widget_instance>
+  </widget_instances>
+</profile>
