@@ -1,0 +1,4 @@
+private-*.txt
+*.swf
+obj/
+Thumbs.db
