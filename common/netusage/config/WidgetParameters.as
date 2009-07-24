@@ -14,7 +14,7 @@ class netusage.config.WidgetParameters
 	{
 		var xml:XML = new XML();
 		xml["target"] = WidgetParameters;
-		//xml.callback = callback;
+
 		xml.onLoad = function (success:Boolean) 
 		{
 			this.target.gotWidgetParameters(callback, this, success);
@@ -72,7 +72,6 @@ class netusage.config.WidgetParameters
 		xml.firstChild.appendChild(widgetParametersNode);
 		
 		var curParameterNode:XMLNode = null;
-		var cur
 		for (var i in parameters)
 		{
 			curParameterNode = xml.createElement("widget_parameter");
